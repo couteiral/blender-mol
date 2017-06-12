@@ -4,6 +4,18 @@ import mathutils
 import sys
 import mendeleev
 
+def getMolecule(filename, a):
+	
+	pointer = open(filename, "r+")
+	data = pointer.readlines()
+	
+	for j in range(a-1):
+
+		line = data[a*i + j + 1]
+		coords.append([line.split()[0], float(line.split()[1]), float(line.split()[2]), float(line.split()[3])])
+
+	return coords
+
 def getIRC(filename, a):
 
 	pointer = open(filename, "r+")
