@@ -7,17 +7,13 @@ import functions
 
 def initialize():
 	
-	bpy.ops.object.select_by_type(type='MESH') # Select cube
-	bpy.ops.object.delete() # Delete cube
-	bpy.context.scene.frame_start = 0 # Initial frame
-	bpy.context.scene.frame_end = len(IRC)*4 # Final frame
-	Materials = initMaterials() # Initialize materials
+	bpy.ops.object.select_by_type(type='MESH')
+	bpy.ops.object.delete()
+	bpy.context.scene.frame_start = 0
+	bpy.context.scene.frame_end = len(IRC)*4
+	Materials = initMaterials()
 	
-	return
-	
-# Get coordinates of first frame
-coords = IRC[0][1]
-
+	return None
 
 def drawAtoms(coords):
 	
