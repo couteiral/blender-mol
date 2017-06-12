@@ -62,7 +62,6 @@ def getMaterial(element, Materials):
 		mat = Materials[2]
 
 	else:
-		
 		mat = Materials[1]	
 
 	return mat
