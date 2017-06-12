@@ -1,3 +1,7 @@
+# Get coordinates of first frame
+coords = IRC[0][1]
+
+
 def generateKeyframes(Atoms, Bonds):
 
 	for Atom in Atoms:
